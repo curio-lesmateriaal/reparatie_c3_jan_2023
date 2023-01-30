@@ -26,6 +26,19 @@ class WedstrijdController extends Controller
     public function generate(Request $request)
     {
         // REPARATIEOPDRACHT HIER UITVOEREN
+
+        // Programmeer het volgende:
+        // 1. Haal alle matches die al in de database staan uit de database
+        // 2. Zorg ervoor dat er een match wordt gegenereerd voor elke combinatie van teams
+        // 2.1. Zorg ervoor dat er geen match wordt gegenereerd voor een team tegen zichzelf
+        // 2.2. Zorg ervoor dat er geen match wordt gegenereerd voor een team dat al een match heeft
+        // 3. Zorg ervoor dat er een tijd wordt gekozen die voor beide teams beschikbaar is
+        // 4. Zorg ervoor dat er een veld wordt gekozen die op die tijd beschikbaar is.
+        // 5. Zorg ervoor dat er een scheidsrechter wordt gekozen die op die tijd beschikbaar is.
+        // 6. Sla de match op in de database
+        // 7. Herhaal dit voor elke combinatie van teams
+        // Let erop dat de mogelijke tijden bepaald worden door het forumulier in /resources/views/teams/wedstrijden.blade.php:23
+        // Je kunt de seeder gebruiken om alvast teams in te laden in de database (php artisan db:seed of php artisan migrate:fresh --seed)
     }
 
     public function editScores($matchId){
