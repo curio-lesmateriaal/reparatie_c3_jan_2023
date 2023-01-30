@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+/* ------------------banner------------- */
+.top-banner{
+    background-image: url("https://images.freeimages.com/images/large-previews/521/soccer-field-1147736.jpg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.upcomming{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    color: white;
+    white-space: nowrap;
+}
+.upcomming p {
+    font-size: clamp(1rem, 2.5vw, 2rem); }   
+
+.team-name{
+    font-weight: bold;
+}
+/* -----------------upcomming-------------- */
+.upcomming-heading{
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: 3vh;
+}
+.upcomming-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 40vh));
+    row-gap: 2vh;    
+    column-gap: 2vw;
+    justify-content: space-around;
+}
+.upcomming-box{
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.upcomming-box p{
+    /* font-size: clamp(0.8rem, 2vw, 2rem); */
+    font-size: minmax(14px, 2vh);
+}
+/* -------------previus game table------------ */
+.previous-game-header{
+    margin-top: 15vh;
+}
+/* --------------footer----------------- */
+footer{
+    background-color: #343a40;
+    color: #e5e5e5;
+    margin-top: 5vh;
+}
+.footer-container{
+    padding-top: 30px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-us-footer{
+    min-width: 200px;
+    max-width: 18vw;
+}
+.ab-us{
+  min-width: 5vw;
+}
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-contact{
+    min-width: 140px;
+    max-width: 300px;
+}
+.footer-socials a{
+    color: white;
+    text-decoration: none;
+}
